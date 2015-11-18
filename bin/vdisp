@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require './display'
+
+opt = OptionParser.new
+
+debug_mode = false
+
+opt.on('-d', '--debug') { |v| debug_mode = true }
+opt.parse!(ARGV)
+
+display = Display.new debug: debug_mode
+display.listen
