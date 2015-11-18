@@ -32,7 +32,7 @@ class Display
         next
       end
       next if command.empty?
-      log "command=#{command} <#{command.empty?}>"
+      log "[received]command=#{command} empty?=<#{command.empty?}>"
       params = command.split ' '
       setpos params[0].to_i, params[1].to_i
       addch params[2].to_s
