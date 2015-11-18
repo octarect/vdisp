@@ -28,7 +28,7 @@ class Display
       break if command == '/end'
       if command == '/update'
         log '[refreshed]'
-        refresh
+        doupdate
         next
       end
       next if command.empty?
