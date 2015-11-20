@@ -7,7 +7,7 @@
 
 require 'curses'
 
-require './logger'
+require 'logger'
 
 class Display
   include Curses

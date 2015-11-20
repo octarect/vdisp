@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
+# load classes from /lib
+$LOAD_PATH << 'lib'
+
 require 'optparse'
-require './display'
+require 'display'
 
 opt = OptionParser.new
 
