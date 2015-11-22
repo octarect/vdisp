@@ -1,10 +1,11 @@
 #!/usr/bin/env ruby
 
-# load classes from /lib
+# Load classes from /lib
 $LOAD_PATH << 'lib'
 
 require 'optparse'
-require 'display'
+require 'screen_manager'
+require 'interface/pipe'
 
 opt = OptionParser.new
 
@@ -13,5 +14,10 @@ debug_mode = false
 opt.on('-d', '--debug') { |v| debug_mode = true }
 opt.parse!(ARGV)
 
-display = Display.new debug: debug_mode
-display.listen
+manager = ScreenManager.new debug: debug_mode
+
+pipe = Pipe.new manager
+pipe_thread = Thread.new do
+  pipe.listen
+end
+pipe_thread.join
