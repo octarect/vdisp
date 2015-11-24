@@ -18,16 +18,24 @@ I checked operations by using the following ruby versions...
 - It may be available on other versions(which can use curses).
 
 ## How to use
+### Download
 Clone this project;
 
 ```
 $ git clone https://github.com/rk0der/vdisp.git
 ```
 
+### Launch
 After that, in the directory you cloned to,
 
 ```
 $ bin/vdisp
+```
+
+or use pipe
+
+```
+$ (other program) | bin/vdisp
 ```
 
 You may want to get a log, then please add an option, -d or --debug.
@@ -38,6 +46,36 @@ $ bin/vdisp -d
 
 At the version of 0.1.0, the program outputs the information to display.log.
 You may be able to specify a filename by future implements.
+
+### Internal command
+At the version of 0.2.0 or newer, you can use the following commands after
+launching program.
+
+- /p [y] [x] [character/string]
+
+Put a character or string on a specified position (y, x).
+For example,
+
+```
+/p 1 1 Hello
+```
+
+- /pane [name] [y] [x] [height] [width] [material]
+
+Create a pane
+For example,
+
+```
+/pane pane0 0 0 20 20 *
+```
+
+- update
+
+Refresh the screen.(normaly unneeded)
+
+- /end
+
+Terminate.
 
 ## Details
 For more information, please visit [wiki](https://github.com/rk0der/vdisp/wiki).
