@@ -11,6 +11,12 @@
 - Show a lot of information
 - Light-weight and fast
 
+## Required environment
+I checked operations by using the following ruby versions...
+
+- Ruby 2.2.3 (My development environment)
+- It may be available on other versions(which can use curses).
+
 ## Details
 
 For more information, please visit [wiki](https://github.com/rk0der/vdisp/wiki).
