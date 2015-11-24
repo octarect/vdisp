@@ -10,7 +10,7 @@ int main(void)
 
   for (i = 0; i < 5; i++)
     for (j = 0; j < 5; j++)
-      printf("%d %d @\n", i, j);
+      printf("/p %d %d #\n", i, j);
 
   printf("/update\n");
 

@@ -19,7 +19,7 @@ int main(void)
 	while (i < 20) {
 		j = 0;
 		while (j < 80) {
-			fprintf(fp, "%d %d a\n", i, j);
+			fprintf(fp, "/p %d %d a\n", i, j);
 			j += 1;
 		}
 		fprintf(fp, "/update\n");
