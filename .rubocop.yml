@@ -8,12 +8,15 @@ Lint/AssignmentInCondition:
   Enabled: false
 
 Metrics/AbcSize:
-  Max: 30
+  Max: 40
 
 Metrics/LineLength:
   Max: 80
 
 Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParallelAssignment:
   Enabled: false
 
 Style/AlignParameters:
