@@ -15,7 +15,7 @@ class ScreenManager
       @display.update
     end
     log "[received]command=#{command} empty?=<#{command.empty?}>"
-    params = command.split ' '
+    params = command.chomp.split ' '
     @display.put_ch params[0].to_i, params[1].to_i, params[2].to_s
   end
 

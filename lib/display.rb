@@ -24,7 +24,7 @@ class Display
 
   def put_ch(row, col, ch)
     setpos row, col
-    addch ch
+    addstr ch
   end
 
   def put_str(row, col, str)
