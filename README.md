@@ -41,3 +41,11 @@ You may be able to specify a filename by future implements.
 
 ## Details
 For more information, please visit [wiki](https://github.com/rk0der/vdisp/wiki).
+
+## The Author
+vdisp was started to develop by Ryota Kota(rk0der), a CS student
+in Iwate Prefectural University, in 2015.
+
+Welcome your contribution.
+
+<ryo.alter@gmail.com>
