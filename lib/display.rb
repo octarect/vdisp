@@ -22,6 +22,11 @@ class Display
     deleteln
   end
 
+  def clear_screen
+    set pos 0, 0
+    clrtoeol
+  end
+
   def put_ch(row, col, ch)
     setpos row, col
     addstr ch
